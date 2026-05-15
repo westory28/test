@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>수업 시작 30초 스위치</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <p class="label">오늘 수업을 여는 작은 장치</p>
+      <h1>수업 시작 30초 스위치</h1>
+      <p class="description">
+        버튼을 누르면 오늘의 질문, 분위기 멘트, 작은 미션이 무작위로 나타납니다.
+      </p>
+
+      <button onclick="startClass()">수업 시작하기</button>
+
+      <div id="result" class="result hidden">
+        <div class="item">
+          <span>오늘의 질문</span>
+          <p id="question"></p>
+        </div>
+
+        <div class="item">
+          <span>수업 분위기</span>
+          <p id="mood"></p>
+        </div>
+
+        <div class="item">
+          <span>작은 미션</span>
+          <p id="mission"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
